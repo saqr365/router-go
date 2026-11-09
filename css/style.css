@@ -4,7 +4,11 @@ html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-t
 body{margin:0;background:var(--bg);color:var(--text);font-family:Cairo,Inter,system-ui,"Segoe UI",Tahoma,sans-serif;font-size:17px;line-height:1.75;overflow-x:hidden}
 html[lang="en"] body{font-family:Inter,Cairo,system-ui,sans-serif;line-height:1.65}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:8px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:0}
+:focus:not(:focus-visible){outline:none}
+.btn:focus-visible{outline-color:var(--text)}
+a,button,[role=button],summary,label{-webkit-tap-highlight-color:transparent}
+button,.btn,.chip,.totop{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:manipulation}
 svg{display:block}
 .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
 .num{direction:ltr;unicode-bidi:isolate}
@@ -326,7 +330,7 @@ dialog.pp-d[open]::backdrop{opacity:1}
 /* WebView2 link + download dialog */
 .wv-link{font:inherit;color:var(--accent);background:none;border:0;padding:0;margin:0;cursor:pointer;border-bottom:1px dashed currentColor;font-weight:700;direction:ltr;unicode-bidi:isolate;display:inline-block}
 .wv-link:hover{border-bottom-style:solid}
-.wv-link:focus-visible{outline:2px solid var(--focus,var(--accent));outline-offset:3px;border-radius:4px}
+.wv-link:focus-visible{outline:2px solid var(--focus,var(--accent));outline-offset:0}
 dialog.wv-d{width:min(460px,calc(100% - 24px))}
 .wv-b{padding:18px 22px 24px;overflow:auto;font-size:16px;line-height:1.8}
 .wv-b p{margin:0 0 12px}
