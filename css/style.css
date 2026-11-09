@@ -316,12 +316,14 @@ dialog.pp-d[open]::backdrop{opacity:1}
 .tip-end::before{left:auto;inset-inline-end:15px;translate:0 4px}
 .tip-up::after{inset-block-start:auto;inset-block-end:calc(100% + 11px);left:auto;inset-inline-end:0;translate:0 -4px}
 .tip-up::before{inset-block-start:auto;inset-block-end:calc(100% + 6px);left:auto;inset-inline-end:17px;translate:0 -4px}
-@media (hover:hover){
+@media (hover:hover) and (pointer:fine){
 [data-tip]:hover::after,[data-tip]:hover::before{opacity:1;visibility:visible;translate:-50% 0}
 .tip-end:hover::after,.tip-end:hover::before,.tip-up:hover::after,.tip-up:hover::before{translate:0 0}
 }
 [data-tip]:focus-visible::after,[data-tip]:focus-visible::before{opacity:1;visibility:visible;translate:-50% 0}
 .tip-end:focus-visible::after,.tip-end:focus-visible::before,.tip-up:focus-visible::after,.tip-up:focus-visible::before{translate:0 0}
+/* touch screens: no tooltips (a tap would leave them stuck open); every button still has its aria-label */
+@media (hover:none),(pointer:coarse){[data-tip]::after,[data-tip]::before{display:none!important}}
 @media (prefers-reduced-motion:no-preference){
 [data-tip]::after,[data-tip]::before{transition:opacity .16s,translate .16s var(--e,cubic-bezier(.2,0,0,1)),visibility .16s}
 [data-tip]:hover::after,[data-tip]:hover::before{transition-delay:.3s}

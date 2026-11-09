@@ -1,5 +1,5 @@
 /* Router Go site: offline shell. Bump VERSION when you deploy a new release. */
-const VERSION = "router-go-v0.7.4-3";
+const VERSION = "router-go-v0.7.4-4";
 const CORE = [
   "./",
   "index.html",
