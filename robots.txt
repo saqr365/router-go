@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saqr365.github.io/router-go/sitemap.xml

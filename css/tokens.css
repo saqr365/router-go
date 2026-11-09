@@ -1,0 +1,17 @@
+/* Art direction: the front panel of a router. Midnight canvas, LED dots, signal arcs
+   taken from the app icon, one amber "open" button as the only loud colour. */
+:root{
+  --bg:#F4F6FB; --surface:#FFFFFF; --surface2:#EAEFFA; --line:#D9E0F0;
+  --text:#0F1A3F; --muted:#4A5576; --accent:#2457D6; --cyan:#0E7490; --ok:#0F6B4D; --bad:#B42318; --focus:#2457D6;
+  --amber:#FBBF24; --amber-ink:#2A1D00; --violet:#7C4DDB;
+  --arc:#2457D6; --r:14px; --e:cubic-bezier(.2,0,0,1);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --bg:#0A1026; --surface:#101A3D; --surface2:#16224D; --line:rgba(255,255,255,.11);
+  --text:#F3F6FB; --muted:#A9B4CC; --accent:#6C9BFF; --cyan:#22D3EE; --ok:#34D399; --bad:#FF8A8A; --focus:#FBBF24; --violet:#A78BFA; --arc:#6C9BFF;}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0A1026; --surface:#101A3D; --surface2:#16224D; --line:rgba(255,255,255,.11);
+  --text:#F3F6FB; --muted:#A9B4CC; --accent:#6C9BFF; --cyan:#22D3EE; --ok:#34D399; --bad:#FF8A8A; --focus:#FBBF24; --violet:#A78BFA; --arc:#6C9BFF;}

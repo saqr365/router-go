@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Router Go</title>
+<meta name="description" content="افتح صفحة إعدادات الراوتر بضغطة واحدة. تطبيق لأندرويد وويندوز من تطوير محمود صقر.">
+<meta name="theme-color" content="#0A1026">
+<link rel="canonical" href="https://saqr365.github.io/router-go/">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Router Go">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" href="assets/img/favicon-light.png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="assets/img/favicon-dark.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preload" href="assets/fonts/cairo-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/cairo-700.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saqr365.github.io/router-go/">
+<meta property="og:site_name" content="Router Go">
+<meta property="og:title" content="Router Go — صفحة الراوتر بضغطة واحدة">
+<meta property="og:description" content="افتح صفحة إعدادات الراوتر بضغطة واحدة. تطبيق لأندرويد وويندوز من تطوير محمود صقر.">
+<meta property="og:image" content="https://saqr365.github.io/router-go/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Router Go">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Router Go — صفحة الراوتر بضغطة واحدة">
+<meta name="twitter:description" content="افتح صفحة إعدادات الراوتر بضغطة واحدة. تطبيق لأندرويد وويندوز من تطوير محمود صقر.">
+<meta name="twitter:image" content="https://saqr365.github.io/router-go/assets/img/og-image.png">
+<script src="js/theme-init.js"></script>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top"><img src="assets/img/icon-512.png" alt="" width="34" height="34"><span>Router Go</span></a>
+    <nav>
+      <a href="#features" data-ar="المميزات" data-en="Features">المميزات</a>
+      <a href="#how" data-ar="إزاي يشتغل" data-en="How it works">إزاي يشتغل</a>
+      <a href="#faq" data-ar="أسئلة" data-en="FAQ">أسئلة</a>
+    </nav>
+    <button class="chip t ic" id="themeBtn" type="button" data-mode="light" aria-label="الوضع الداكن" data-tip="الوضع الداكن"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+    <button class="chip lg" id="langBtn" type="button" lang="en" aria-label="Switch to English" data-tip="English">EN</button>
+    <button class="chip ic" id="installBtn" type="button" data-install hidden aria-label="ثبّت كتطبيق" data-tip="ثبّت كتطبيق"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg></button>
+    <a class="btn amber sm" href="#downloads" data-ar="حمّل التطبيق" data-en="Get the app">حمّل التطبيق</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <svg class="arcs" viewBox="0 0 760 760" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="380" cy="380" r="120"/><circle cx="380" cy="380" r="200"/><circle cx="380" cy="380" r="280"/><circle cx="380" cy="380" r="360"/></svg>
+    <div class="wrap hero-in">
+      <div>
+        <div class="leds" aria-hidden="true"><i></i><i></i><i></i></div>
+        <h1 id="h1">صفحة الراوتر <em>بضغطة واحدة</em></h1>
+        <p class="lead" data-ar="احفظ راوتراتك مرة واحدة وادخل على صفحة الإعدادات في ثانية، من الموبايل أو الكمبيوتر، من غير ما تكتب العنوان كل مرة." data-en="Save your routers once and open their admin page in a second, on your phone or PC, without typing the address every time.">احفظ راوتراتك مرة واحدة وادخل على صفحة الإعدادات في ثانية، من الموبايل أو الكمبيوتر، من غير ما تكتب العنوان كل مرة.</p>
+        <div class="cta">
+          <a class="btn amber big" href="#downloads">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-4.500-4.500M12 15l4.500-4.500M4 20h16"/></svg>
+            <span data-ar="حمّل التطبيق" data-en="Get the app">حمّل التطبيق</span>
+          </a>
+          <a class="link" href="#how" data-ar="شوف إزاي يشتغل" data-en="See how it works">شوف إزاي يشتغل</a>
+        </div>
+        <p class="micro" data-ar="أندرويد وويندوز · من غير إعلانات ولا حساب ولا تتبّع" data-en="Android and Windows · no ads, no account, no tracking">أندرويد وويندوز · من غير إعلانات ولا حساب ولا تتبّع</p>
+      </div>
+
+      <div class="stage">
+        <div class="phone"><img src="assets/img/app-screenshot.webp" width="720" height="1000" fetchpriority="high" alt="شاشة Router Go الرئيسية: راوترين محفوظين وزر فتح لكل واحد" data-alt-ar="شاشة Router Go الرئيسية: راوترين محفوظين وزر فتح لكل واحد" data-alt-en="Router Go home screen: two saved routers, each with an Open button"></div>
+        <div class="widget" aria-hidden="true">
+          <small data-ar="ويدجت أندرويد" data-en="ANDROID WIDGET">ويدجت أندرويد</small>
+          <div class="row"><div><b data-ar="راوتر البيت" data-en="Home router">راوتر البيت</b><span class="pill on" data-ar="متصل" data-en="Online">متصل</span></div><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="wrap">
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><span data-ar="أندرويد وويندوز" data-en="Android and Windows">أندرويد وويندوز</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><span data-ar="عربي وإنجليزي" data-en="Arabic and English">عربي وإنجليزي</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span data-ar="قفل PIN أو بصمة" data-en="PIN or fingerprint lock">قفل PIN أو بصمة</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.500 8 8 9 4.500-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span data-ar="بياناتك على جهازك بس" data-en="Your data stays on your device">بياناتك على جهازك بس</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="s" id="downloads">
+    <div class="wrap">
+      <p class="eyebrow" data-ar="التحميل" data-en="DOWNLOAD">التحميل</p>
+      <h2 data-ar="اختار نسختك" data-en="Pick your build">اختار نسختك</h2>
+      <p class="sub" data-ar="نسختان: واحدة لأندرويد وواحدة لويندوز. نفس الإمكانيات ونفس الشكل." data-en="Two builds: Android and Windows. Same features, same look.">نسختان: واحدة لأندرويد وواحدة لويندوز. نفس الإمكانيات ونفس الشكل.</p>
+      <div class="ports">
+        <article class="port" data-os="android">
+          <div class="port-h">
+            <div class="plat"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 9h10v8a1 1 0 0 1-1 1h-1v3a1.200 1.200 0 0 1-2.400 0v-3h-1.200v3a1.200 1.200 0 0 1-2.400 0v-3H8a1 1 0 0 1-1-1V9Zm-3.200 0a1.200 1.200 0 0 1 2.400 0v5.500a1.200 1.200 0 0 1-2.400 0V9Zm14 0a1.200 1.200 0 0 1 2.400 0v5.500a1.200 1.200 0 0 1-2.400 0V9ZM17 8H7a5 5 0 0 1 1.800-4.500L7.600 1.800l.6-.4 1.300 1.800c.7-.4 1.600-.6 2.500-.6s1.800.2 2.500.6l1.300-1.800.6.4-1.200 1.700A5 5 0 0 1 17 8Z"/></svg></div>
+            <div><h3 data-ar="نسخة أندرويد" data-en="Android app">نسخة أندرويد</h3><p class="tag">APK</p></div>
+          </div>
+          <dl class="facts">
+            <dt data-ar="الإصدار" data-en="Version">الإصدار</dt><dd>0.7.4</dd>
+            <dt data-ar="الملف" data-en="File">الملف</dt><dd><span class="num">router-go.apk</span></dd>
+            <dt data-ar="القفل" data-en="Lock">القفل</dt><dd data-ar="PIN أو البصمة" data-en="PIN or fingerprint">PIN أو البصمة</dd>
+          </dl>
+          <ol class="how">
+            <li data-ar="نزّل ملف الـ APK على الموبايل." data-en="Download the APK to your phone.">نزّل ملف الـ APK على الموبايل.</li>
+            <li data-ar="اسمح بالتثبيت من مصادر غير معروفة لو طلب منك." data-en="Allow installs from unknown sources if asked.">اسمح بالتثبيت من مصادر غير معروفة لو طلب منك.</li>
+            <li data-ar="افتح الملف واضغط تثبيت." data-en="Open the file and tap Install.">افتح الملف واضغط تثبيت.</li>
+          </ol>
+          <a class="btn amber" href="https://github.com/saqr365/router-go/releases/latest/download/router-go.apk" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-4.500-4.500M12 15l4.500-4.500M4 20h16"/></svg>
+            <span data-ar="تحميل APK" data-en="Download APK">تحميل APK</span>
+          </a>
+        </article>
+
+        <article class="port" data-os="windows">
+          <div class="port-h">
+            <div class="plat"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.500 10.500 4.400v7H3v-5.900Zm8.700-1.300L21 3v8.400h-9.300V4.200ZM3 12.600h7.500v7L3 18.500v-5.900Zm8.700 0H21V21l-9.300-1.300v-7.100Z"/></svg></div>
+            <div><h3 data-ar="نسخة ويندوز" data-en="Windows app">نسخة ويندوز</h3><p class="tag">EXE</p></div>
+          </div>
+          <dl class="facts">
+            <dt data-ar="الإصدار" data-en="Version">الإصدار</dt><dd>0.7.4</dd>
+            <dt data-ar="الملف" data-en="File">الملف</dt><dd><span class="num">RouterGo-Setup.exe</span></dd>
+            <dt data-ar="النظام" data-en="System">النظام</dt><dd data-ar="ويندوز 10 و11 (64 بت)" data-en="Windows 10 and 11 (64-bit)">ويندوز 10 و11 (64 بت)</dd>
+          </dl>
+          <ol class="how">
+            <li data-ar="نزّل ملف التثبيت وشغّله." data-en="Download the installer and run it.">نزّل ملف التثبيت وشغّله.</li>
+            <li data-ar="كمّل خطوات المثبّت، وهيضيف اختصار على سطح المكتب." data-en="Follow the setup steps; it adds a desktop shortcut.">كمّل خطوات المثبّت، وهيضيف اختصار على سطح المكتب.</li>
+            <li><span data-ar="تسجيل الدخول التلقائي يحتاج" data-en="Auto sign-in needs">تسجيل الدخول التلقائي يحتاج</span> <button type="button" class="wv-link" id="wvOpen" data-tip="رابط تنزيل WebView2 Runtime" aria-haspopup="dialog">WebView2</button> <span data-ar="(موجود غالبًا في ويندوز)." data-en="(usually already in Windows).">(موجود غالبًا في ويندوز).</span></li>
+          </ol>
+          <a class="btn amber" href="https://github.com/saqr365/router-go/releases/latest/download/RouterGo-Setup.exe" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-4.500-4.500M12 15l4.500-4.500M4 20h16"/></svg>
+            <span data-ar="تحميل EXE" data-en="Download EXE">تحميل EXE</span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="s s-tight" id="features">
+    <div class="wrap">
+      <p class="eyebrow" data-ar="المميزات" data-en="FEATURES">المميزات</p>
+      <h2 data-ar="أدوات صغيرة تخلّي الدخول على الراوتر أسرع" data-en="Small tools that get you into your router faster">أدوات صغيرة تخلّي الدخول على الراوتر أسرع</h2>
+      <p class="sub" data-ar="كل حاجة بتعملها كل مرة بتتعمل لك أوتوماتيك." data-en="Everything you repeat every time is done for you.">كل حاجة بتعملها كل مرة بتتعمل لك أوتوماتيك.</p>
+      <div class="bento">
+        <div class="tile t-a">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.500 1 4 14h6l-1.500 9L20 9h-6.500z"/></svg>
+          <h3 data-ar="فتح فوري ودخول تلقائي" data-en="Instant open, optional auto sign-in">فتح فوري ودخول تلقائي</h3>
+          <p data-ar="زر واحد يفتح صفحة الراوتر جوه التطبيق ويملأ اسم المستخدم وكلمة المرور المحفوظين. بيملأ مرة واحدة بس في كل محاولة، فكلمة سر غلط عمرها ما تقفل الراوتر عليك." data-en="One button opens the router page inside the app and fills in your saved username and password. It fills once per attempt, so a wrong password can never lock you out of the router.">زر واحد يفتح صفحة الراوتر جوه التطبيق ويملأ اسم المستخدم وكلمة المرور المحفوظين. بيملأ مرة واحدة بس في كل محاولة، فكلمة سر غلط عمرها ما تقفل الراوتر عليك.</p>
+          <div class="vis"><div class="flow" aria-hidden="true"><span>Router Go</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-5-5 5 5-5 5"/></svg><span class="num">192.168.1.1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-5-5 5 5-5 5"/></svg><span>Login</span></div></div>
+        </div>
+        <div class="tile t-b">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/></svg>
+          <h3 data-ar="ويدجت على الشاشة الرئيسية" data-en="Home-screen widgets">ويدجت على الشاشة الرئيسية</h3>
+          <p data-ar="على أندرويد: افتح الراوتر أو اختبر السرعة من غير ما تفتح التطبيق." data-en="On Android: open your router or run a speed test without opening the app.">على أندرويد: افتح الراوتر أو اختبر السرعة من غير ما تفتح التطبيق.</p>
+        </div>
+        <div class="tile t-c">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 17h.01M8 10a6 6 0 0 1 8 0"/></svg>
+          <h3 data-ar="أكتر من راوتر" data-en="Multiple routers">أكتر من راوتر</h3>
+          <p data-ar="راوتر البيت والشغل، مع واحد افتراضي، وحالة الاتصال تظهر على كل كارت." data-en="Home and work routers with one default, and a live status on every card.">راوتر البيت والشغل، مع واحد افتراضي، وحالة الاتصال تظهر على كل كارت.</p>
+        </div>
+        <div class="tile t-d">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.600 5.400 5.900.8-4.300 4.100 1 5.900L12 16.400 6.800 19.200l1-5.900L3.500 9.200l5.900-.8z"/></svg>
+          <h3 data-ar="صفحاتي المفضلة" data-en="Favorite pages">صفحاتي المفضلة</h3>
+          <p data-ar="احفظ صفحة جوه إعدادات الراوتر وافتحها بعدين بضغطة، حتى لو بتحتاج تدوس على قوائم." data-en="Save a page deep inside your router settings and reopen it in one tap, even if it takes several menu clicks.">احفظ صفحة جوه إعدادات الراوتر وافتحها بعدين بضغطة، حتى لو بتحتاج تدوس على قوائم.</p>
+        </div>
+        <div class="tile t-e">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14l4-4"/><path d="M3.300 18a10 10 0 1 1 17.400 0"/></svg>
+          <h3 data-ar="اختصارات اختبار السرعة" data-en="Speed test shortcuts">اختصارات اختبار السرعة</h3>
+          <p data-ar="مواقع طرف ثالث بتفتح جوه التطبيق." data-en="Third-party sites that open inside the app.">مواقع طرف ثالث بتفتح جوه التطبيق.</p>
+          <div class="vis"><div class="speed" aria-hidden="true"><span>Speedtest</span><span>Fast</span><span>Cloudflare</span></div></div>
+        </div>
+        <div class="tile t-f">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+          <h3 data-ar="الأجهزة المحفوظة وعناوين MAC" data-en="Saved devices and MAC addresses">الأجهزة المحفوظة وعناوين MAC</h3>
+          <p data-ar="سجّل أجهزتك (الاسم، MAC، IP). اكتب الـ MAC من غير نقطتين والتطبيق يرتبه، وثبّت جهاز فوق صفحة الراوتر، وزر التعبئة يكتبه في نموذج إضافة جهاز من غير ما يدوس حفظ." data-en="Keep an inventory of your devices (name, MAC, IP). Type a MAC without colons and the app formats it, pin a device over the router page, and the fill button types it into the router’s add-device form without ever pressing save.">سجّل أجهزتك (الاسم، MAC، IP). اكتب الـ MAC من غير نقطتين والتطبيق يرتبه، وثبّت جهاز فوق صفحة الراوتر، وزر التعبئة يكتبه في نموذج إضافة جهاز من غير ما يدوس حفظ.</p>
+          <div class="vis"><div class="macs" aria-hidden="true"><span>AA</span><span>BB</span><span>CC</span><span>DD</span><span>EE</span><span>FF</span></div></div>
+        </div>
+        <div class="tile t-g">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          <h3 data-ar="قفل ونسخ احتياطي" data-en="Lock and backup">قفل ونسخ احتياطي</h3>
+          <p data-ar="قفل بـ PIN أو بصمة أو Windows Hello. وصدّر بياناتك لملف محمي بكلمة مرور وارجع استوردها وقت ما تحب." data-en="Lock with a PIN, fingerprint or Windows Hello. Export your data to a password-protected file and import it whenever you like.">قفل بـ PIN أو بصمة أو Windows Hello. وصدّر بياناتك لملف محمي بكلمة مرور وارجع استوردها وقت ما تحب.</p>
+          <div class="vis"><div class="pins" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s s-tight" id="how">
+    <div class="wrap">
+      <p class="eyebrow" data-ar="إزاي يشتغل" data-en="HOW IT WORKS">إزاي يشتغل</p>
+      <h2 data-ar="ثلاث خطوات وخلصت" data-en="Three steps and you are in">ثلاث خطوات وخلصت</h2>
+      <p class="sub" data-ar="من أول تثبيت لحد ما تفتح الراوتر بدون ما تكتب أي عنوان." data-en="From install to opening your router without typing an address.">من أول تثبيت لحد ما تفتح الراوتر بدون ما تكتب أي عنوان.</p>
+      <ol class="steps">
+        <li><b class="n num">1</b><h3 data-ar="احفظ راوترك" data-en="Save your router">احفظ راوترك</h3><p data-ar="اكتب الاسم والعنوان واليوزر والباسورد مرة واحدة، أو خلّي التطبيق يكتشف عنوان الراوتر لوحده." data-en="Enter the name, address and login once, or let the app detect the router address for you.">اكتب الاسم والعنوان واليوزر والباسورد مرة واحدة، أو خلّي التطبيق يكتشف عنوان الراوتر لوحده.</p></li>
+        <li><b class="n num">2</b><h3 data-ar="اضغط فتح" data-en="Tap Open">اضغط فتح</h3><p data-ar="صفحة الإعدادات تفتح جوه التطبيق، وتقدر تخلّيها تفتح أول ما التطبيق يشتغل." data-en="The settings page opens inside the app, and you can have it open the moment the app starts.">صفحة الإعدادات تفتح جوه التطبيق، وتقدر تخلّيها تفتح أول ما التطبيق يشتغل.</p></li>
+        <li><b class="n num">3</b><h3 data-ar="اشتغل بسرعة" data-en="Get on with it">اشتغل بسرعة</h3><p data-ar="اتنقل بين صفحاتك المفضلة، واعمل اختبار سرعة، وثبّت الأجهزة اللي بتحتاجها قدامك." data-en="Jump between favorite pages, run a speed test, and pin the devices you need in front of you.">اتنقل بين صفحاتك المفضلة، واعمل اختبار سرعة، وثبّت الأجهزة اللي بتحتاجها قدامك.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="s priv" id="privacy">
+    <div class="wrap priv-g">
+      <div>
+        <p class="eyebrow" data-ar="الخصوصية" data-en="PRIVACY">الخصوصية</p>
+        <h2 data-ar="بياناتك على جهازك بس" data-en="Your data stays on your device">بياناتك على جهازك بس</h2>
+        <p class="sub" data-ar="التطبيق اختصار لراوترك أنت، مش أداة اختراق. وبرضه: غيّر كلمة مرور الراوتر الافتراضية." data-en="It is a shortcut to your own router, not a hacking tool. And please change your router’s default password.">التطبيق اختصار لراوترك أنت، مش أداة اختراق. وبرضه: غيّر كلمة مرور الراوتر الافتراضية.</p>
+        <a class="link js-pp" href="privacy.html" data-ar="اقرأ سياسة الخصوصية كاملة" data-en="Read the full privacy policy">اقرأ سياسة الخصوصية كاملة</a>
+      </div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><b data-ar="مشفّرة ومحلية" data-en="Encrypted and local">مشفّرة ومحلية</b><span data-ar="كلمات المرور محفوظة مشفّرة على جهازك ومابتتبعتش لأي مكان." data-en="Passwords are stored encrypted on your device and never sent anywhere.">كلمات المرور محفوظة مشفّرة على جهازك ومابتتبعتش لأي مكان.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><b data-ar="مفيش سيرفر" data-en="No server">مفيش سيرفر</b><span data-ar="التطبيق بيتكلم مع راوترك بس، ومفيش حساب ولا تسجيل دخول للتطبيق نفسه." data-en="The app only talks to your router. There is no account and no sign-in to the app itself.">التطبيق بيتكلم مع راوترك بس، ومفيش حساب ولا تسجيل دخول للتطبيق نفسه.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><div><b data-ar="مفيش إعلانات ولا تتبّع" data-en="No ads, no tracking">مفيش إعلانات ولا تتبّع</b><span data-ar="ولا حتى خطوط من الإنترنت: الخطوط جوه التطبيق." data-en="Not even web fonts: the fonts ship inside the app.">ولا حتى خطوط من الإنترنت: الخطوط جوه التطبيق.</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="s" id="faq">
+    <div class="wrap">
+      <p class="eyebrow" data-ar="أسئلة" data-en="FAQ">أسئلة</p>
+      <h2 data-ar="أسئلة بتتسأل كتير" data-en="Common questions">أسئلة بتتسأل كتير</h2>
+      <div class="faq">
+        <details><summary data-ar="التطبيق ده أداة اختراق؟" data-en="Is this a hacking tool?">التطبيق ده أداة اختراق؟</summary><p data-ar="لأ. هو اختصار بيفتح صفحة الراوتر بتاعك وبيدخل بالبيانات اللي إنت حفظتها، ومابيعملش أي فحص للشبكة." data-en="No. It is a shortcut that opens your own router’s page and signs in with the login you saved. It does not scan the network.">لأ. هو اختصار بيفتح صفحة الراوتر بتاعك وبيدخل بالبيانات اللي إنت حفظتها، ومابيعملش أي فحص للشبكة.</p></details>
+        <details><summary data-ar="الباسورد بيتخزن فين؟" data-en="Where is my password stored?">الباسورد بيتخزن فين؟</summary><p data-ar="على جهازك بس، مشفّر. مابيتبعتش لأي سيرفر. لو صدّرت ملف نسخة احتياطية، احميه بكلمة مرور واحفظه في مكان آمن." data-en="Only on your device, encrypted. It is never sent to a server. If you export a backup file, protect it with a password and keep it somewhere safe.">على جهازك بس، مشفّر. مابيتبعتش لأي سيرفر. لو صدّرت ملف نسخة احتياطية، احميه بكلمة مرور واحفظه في مكان آمن.</p></details>
+        <details><summary data-ar="ليه الأندرويد بيطلب السماح بمصادر غير معروفة؟" data-en="Why does Android ask about unknown sources?">ليه الأندرويد بيطلب السماح بمصادر غير معروفة؟</summary><p data-ar="لأن الملف بيتنزل من الموقع مباشرة مش من متجر. اسمح بالتثبيت للمتصفح اللي نزّلت منه، وبعد التثبيت تقدر ترجّع الإعداد زي ما كان." data-en="Because the file comes straight from this website, not from a store. Allow installs for the browser you downloaded it with, and switch the setting back after installing.">لأن الملف بيتنزل من الموقع مباشرة مش من متجر. اسمح بالتثبيت للمتصفح اللي نزّلت منه، وبعد التثبيت تقدر ترجّع الإعداد زي ما كان.</p></details>
+        <details><summary data-ar="الدخول التلقائي مش شغال على ويندوز" data-en="Auto sign-in does not work on Windows">الدخول التلقائي مش شغال على ويندوز</summary><p data-ar="الدخول التلقائي بيحتاج WebView2 Runtime، وغالبًا موجود في ويندوز 10 و11. لو مش موجود التطبيق بيعرض عليك تفتح الراوتر في المتصفح." data-en="Auto sign-in needs the WebView2 Runtime, which is usually already in Windows 10 and 11. If it is missing, the app offers to open the router in your browser instead.">الدخول التلقائي بيحتاج WebView2 Runtime، وغالبًا موجود في ويندوز 10 و11. لو مش موجود التطبيق بيعرض عليك تفتح الراوتر في المتصفح.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="s final" id="developer">
+    <div class="wrap">
+      <h2 data-ar="جاهز تفتح راوترك بضغطة؟" data-en="Ready to open your router in one tap?">جاهز تفتح راوترك بضغطة؟</h2>
+      <p class="sub" data-ar="نزّل النسخة المناسبة وابدأ في دقيقتين." data-en="Download the right build and start in two minutes.">نزّل النسخة المناسبة وابدأ في دقيقتين.</p>
+      <a class="btn amber big" href="#downloads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-4.500-4.500M12 15l4.500-4.500M4 20h16"/></svg><span data-ar="حمّل التطبيق" data-en="Get the app">حمّل التطبيق</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="brand" href="#top"><img src="assets/img/icon-512.png" alt="" width="34" height="34"><span>Router Go</span></a>
+        <p data-ar="افتح صفحة الراوتر بضغطة واحدة. لأندرويد وويندوز." data-en="Open your router page in one tap. For Android and Windows.">افتح صفحة الراوتر بضغطة واحدة. لأندرويد وويندوز.</p>
+        <div class="dev"><div class="avatar" id="av">م</div><div><b id="devName">محمود صقر</b><small data-ar="مطوّر التطبيق" data-en="App developer">مطوّر التطبيق</small></div></div>
+      </div>
+      <div class="f-col">
+        <h3 data-ar="الموقع" data-en="Site">الموقع</h3>
+        <a href="#downloads" data-ar="التحميل" data-en="Download">التحميل</a>
+        <a href="#features" data-ar="المميزات" data-en="Features">المميزات</a>
+        <a href="#how" data-ar="إزاي يشتغل" data-en="How it works">إزاي يشتغل</a>
+        <a href="#faq" data-ar="أسئلة" data-en="FAQ">أسئلة</a>
+        <a class="js-pp" href="privacy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a>
+        <a href="#" role="button" data-install hidden><span data-ar="ثبّت الموقع كتطبيق" data-en="Install as an app">ثبّت الموقع كتطبيق</span></a>
+      </div>
+      <div class="f-col">
+        <h3 data-ar="تواصل" data-en="Contact">تواصل</h3>
+        <a href="https://github.com/saqr365" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4 1.300-4-2-6-2m12 4v-3.200a2.800 2.800 0 0 0-.8-2.200c2.800-.3 5.800-1.400 5.800-6.200a4.800 4.800 0 0 0-1.300-3.400 4.500 4.500 0 0 0-.1-3.400s-1-.3-3.500 1.300a12 12 0 0 0-6.200 0C6.400 2.300 5.400 2.600 5.400 2.600a4.500 4.500 0 0 0-.1 3.400A4.800 4.800 0 0 0 4 9.400c0 4.800 3 5.900 5.800 6.200a2.800 2.800 0 0 0-.8 2.200V21"/></svg><span class="num">github.com/saqr365</span></a>
+        <a href="mailto:mahmoud.saqr.dm@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span class="num">mahmoud.saqr.dm@gmail.com</span></a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span id="copy">© 2026 محمود صقر. جميع الحقوق محفوظة.</span>
+      <span>Router Go · v0.7.4</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta"><a class="btn amber" href="#downloads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-4.500-4.500M12 15l4.500-4.500M4 20h16"/></svg><span data-ar="حمّل التطبيق" data-en="Get the app">حمّل التطبيق</span></a></div>
+
+<button class="totop tip-up" id="toTop" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span class="vh" data-ar="الرجوع لأعلى الصفحة" data-en="Back to top">الرجوع لأعلى الصفحة</span></button>
+
+<dialog class="pp-d wv-d" id="installDialog" aria-labelledby="installTitle">
+  <div class="pp-h">
+    <b id="installTitle" data-ar="ثبّت Router Go كتطبيق" data-en="Install Router Go as an app">ثبّت Router Go كتطبيق</b>
+    <button class="pp-x tip-end" id="installClose" type="button" aria-label="إغلاق">&times;</button>
+  </div>
+  <div class="wv-b">
+    <p data-ar="في سفاري: اضغط زر المشاركة ثم «إضافة إلى الشاشة الرئيسية»." data-en="In Safari, tap the Share button, then “Add to Home Screen”.">في سفاري: اضغط زر المشاركة ثم «إضافة إلى الشاشة الرئيسية».</p>
+  </div>
+</dialog>
+
+<dialog class="pp-d wv-d" id="wvDialog" aria-labelledby="wvTitle">
+  <div class="pp-h">
+    <b id="wvTitle" data-ar="تنزيل WebView2 Runtime" data-en="Download WebView2 Runtime">تنزيل WebView2 Runtime</b>
+    <button class="pp-x tip-end" id="wvClose" type="button" aria-label="Close">&times;</button>
+  </div>
+  <div class="wv-b">
+    <p data-ar="أداة من مايكروسوفت بيحتاجها التطبيق عشان الدخول التلقائي للراوتر. ده المثبّت الكامل (Evergreen Standalone) وبيشتغل من غير إنترنت، ونسخة x64 هي المناسبة للتطبيق:" data-en="A Microsoft component the app needs for automatic router sign-in. This is the full installer (Evergreen Standalone) and works offline. The x64 version is the one the app uses:">أداة من مايكروسوفت بيحتاجها التطبيق عشان الدخول التلقائي للراوتر. ده المثبّت الكامل (Evergreen Standalone) وبيشتغل من غير إنترنت، ونسخة x64 هي المناسبة للتطبيق:</p>
+    <ul class="wv-list">
+      <li><a class="btn amber" href="https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/0126536e-e048-416f-923b-202f7f6fa64b/MicrosoftEdgeWebView2RuntimeInstallerX64.exe" rel="noopener"><span class="num">WebView2 Runtime (x64)</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v13M6 11l6 6 6-6M5 21h14"/></svg></a></li>
+    </ul>
+    <p class="wv-note" data-ar="الملف بيتنزّل من سيرفرات مايكروسوفت مباشرة." data-en="The file downloads directly from Microsoft's servers.">الملف بيتنزّل من سيرفرات مايكروسوفت مباشرة.</p>
+  </div>
+</dialog>
+
+<dialog class="pp-d" id="ppDialog" aria-labelledby="ppTitle">
+  <div class="pp-h">
+    <b id="ppTitle" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</b>
+    <a href="privacy.html" target="_blank" rel="noopener" data-ar="فتح في صفحة" data-en="Open as a page">فتح في صفحة</a>
+    <button class="pp-x tip-end" id="ppClose" type="button" aria-label="Close">&times;</button>
+  </div>
+  <div class="pp-b" id="pp-ar" lang="ar" dir="rtl"><div class="pp-meta"><span class="pp-date">آخر تحديث: 26 أكتوبر 2026</span><button class="pp-all" type="button" data-open="افتح الكل" data-close="اقفل الكل">افتح الكل</button></div>
+<p>تطبيق Router Go (لأندرويد وويندوز) بيفتح صفحة إدارة الراوتر بتاعك بضغطة واحدة. التطبيق من تطوير محمود صقر، ومابيجمعش أي بيانات عنك ولا بيبعتها لأي سيرفر تابع لنا.</p>
+<ul class="pp-sum"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>بياناتك بتتخزّن على جهازك بس، ومشفّرة.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>مفيش سيرفر تابع لنا، ومفيش إعلانات ولا تتبّع.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>ملف التصدير فيه بيانات الدخول كنص عادي، احفظه في مكان آمن.</span></li></ul>
+<details class="pp-sec" open><summary>البيانات اللي بيحفظها التطبيق على جهازك</summary><div class="pp-sec-b"><ul>
+<li>أسماء الراوترات وعناوينها (IP) والمنافذ، وقايمة الأجهزة والصفحات المفضّلة.</li>
+<li>اسم المستخدم وكلمة المرور الخاصين بالراوتر، عشان الدخول التلقائي.</li>
+<li>إعدادات التطبيق (المظهر واللغة) ونسخة مشفّرة من الـ PIN لو فعّلت القفل.</li>
+</ul>
+<p>كل ده بيتخزّن على جهازك بس، مشفّر، ومابيتبعتش لأي مكان. الحذف بيتم بحذف الراوتر من التطبيق أو بإلغاء تثبيت التطبيق.</p></div></details>
+<details class="pp-sec"><summary>الاتصال بالإنترنت والشبكة</summary><div class="pp-sec-b"><ul>
+<li>التطبيق بيتصل بعنوان الراوتر اللي إنت كتبته (غالبًا على شبكتك المحلية) ويعرض صفحته. الدخول التلقائي بيكتب بيانات الدخول في صفحة الراوتر دي بس.</li>
+<li>على أندرويد، لو سمحت بإذن "الموقع" بيقرأ التطبيق عنوان الماك (BSSID) لشبكة الواي فاي المتصل بيها عشان يفرّق بين راوترات ليها نفس العنوان. ده بيحصل على جهازك بس: التطبيق مش بيستخدم موقعك ومش بيبعت أي بيانات.</li>
+<li>ويدجت أندرويد (اختياري): طول ما في ويدجت على الشاشة الرئيسية، التطبيق بيحفظ أسماء الراوترات وعناوينها في تخزين التطبيق الخاص على جهازك عشان الويدجت يعرضها ويفحص الاتصال. بيتمسحوا لما تشيل آخر ويدجت. بيانات الدخول (اليوزر والباسورد) عمرها ما بتتنسخ.</li>
+<li>قسم اختبار السرعة بيفتح مواقع طرف ثالث (Speedtest وFast وCloudflare). سياسات خصوصية الجهات دي هي اللي بتنطبق عليها.</li>
+<li>الخطوط (Cairo وInter) موجودة جوه التطبيق نفسه، ومفيش أي تحميل خطوط من الإنترنت.</li>
+</ul></div></details>
+<details class="pp-sec"><summary>البصمة</summary><div class="pp-sec-b"><p>التحقق بالبصمة بيتم بواسطة نظام أندرويد أو ويندوز. التطبيق مابيوصلش لبيانات بصمتك وبياخد بس نتيجة "نجح" أو "فشل".</p></div></details>
+<details class="pp-sec"><summary>التصدير</summary><div class="pp-sec-b"><p>ملف التصدير اللي بتطلبه بنفسك بيحتوي بيانات الدخول كنص عادي. احفظه في مكان آمن ومتشاركوش.</p></div></details>
+<details class="pp-sec"><summary>مفيش إعلانات ولا تتبّع</summary><div class="pp-sec-b"><p>التطبيق مفيهوش إعلانات ولا أدوات تحليل أو تتبّع، ومابيبيعش ولا بيشارك أي بيانات.</p></div></details>
+<details class="pp-sec"><summary>الأطفال</summary><div class="pp-sec-b"><p>التطبيق مش موجّه للأطفال.</p></div></details>
+<details class="pp-sec"><summary>التواصل</summary><div class="pp-sec-b"><p>لأي استفسار: <a href="mailto:mahmoud.saqr.dm@gmail.com">mahmoud.saqr.dm@gmail.com</a></p></div></details></div>
+  <div class="pp-b" id="pp-en" lang="en" dir="ltr" hidden><div class="pp-meta"><span class="pp-date">Last updated: October 26, 2026</span><button class="pp-all" type="button" data-open="Open all" data-close="Close all">Open all</button></div>
+<p>Router Go (Android and Windows) opens your router's admin page in one tap. It is developed by Mahmoud Saqr. The app does not collect your data and does not send it to any server of ours.</p>
+<ul class="pp-sum"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Your data is stored only on your device, encrypted.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>No server of ours, no ads, no tracking.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>An export file holds your logins as plain text: keep it safe.</span></li></ul>
+<details class="pp-sec" open><summary>Data the app stores on your device</summary><div class="pp-sec-b"><ul>
+<li>Router names, addresses (IP) and ports, the device list and favorite pages.</li>
+<li>The router's username and password, used for automatic sign-in.</li>
+<li>App settings (theme, language) and a hashed copy of your PIN if you turn on the lock.</li>
+</ul>
+<p>All of this stays on your device, encrypted, and is never transmitted. You can delete it by removing a router in the app or by uninstalling the app.</p></div></details>
+<details class="pp-sec"><summary>Internet and network use</summary><div class="pp-sec-b"><ul>
+<li>The app connects to the router address you enter (usually on your local network) and shows its page. Automatic sign-in only fills the login on that router page.</li>
+<li>On Android, if you allow the "Location" permission, the app reads the MAC address (BSSID) of the Wi-Fi network you are connected to, to tell apart routers that share the same address. This happens on your device only: the app does not use your location and sends no data.</li>
+<li>Android widget (optional): while a widget is on the home screen, the app keeps the names and addresses of your routers in its private storage on your device so the widget can show them and test the connection. They are deleted when the last widget is removed. Logins (username / password) are never copied.</li>
+<li>The speed-test section opens third-party sites (Speedtest, Fast, Cloudflare). Their own privacy policies apply to those sites.</li>
+<li>The fonts (Cairo and Inter) are bundled inside the app, so nothing is downloaded for fonts.</li>
+</ul></div></details>
+<details class="pp-sec"><summary>Biometrics</summary><div class="pp-sec-b"><p>Fingerprint checks are handled by Android or Windows. The app never accesses your biometric data and only receives a success or failure result.</p></div></details>
+<details class="pp-sec"><summary>Export</summary><div class="pp-sec-b"><p>An export file that you request contains login details as plain text. Keep it somewhere safe and do not share it.</p></div></details>
+<details class="pp-sec"><summary>No ads, no tracking</summary><div class="pp-sec-b"><p>The app contains no advertising and no analytics or tracking tools, and it does not sell or share data.</p></div></details>
+<details class="pp-sec"><summary>Children</summary><div class="pp-sec-b"><p>The app is not directed at children.</p></div></details>
+<details class="pp-sec"><summary>Contact</summary><div class="pp-sec-b"><p><a href="mailto:mahmoud.saqr.dm@gmail.com">mahmoud.saqr.dm@gmail.com</a></p></div></details></div>
+</dialog>
+
+<script src="js/device-hint.js" defer></script>
+<script src="js/sticky-cta.js" defer></script>
+<script src="js/ui.js" defer></script>
+<script src="js/motion.js" defer></script>
+<script src="js/mailto.js" defer></script>
+<script src="js/pwa.js" defer></script>
+</body>
+</html>
