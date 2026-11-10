@@ -5,4 +5,4 @@
 - `router-go.apk`
 - `RouterGo-Setup.exe`
 
-وزرّار التحميل في `index.html` بيشاوروا على `releases/latest/download/`. الشرح الكامل في `landing/README.md`.
+وزرّار التحميل في `index.html` بيشاوروا على `releases/latest/download/`. الشرح الكامل في `landing/SITE_NOTES_AR.md`.
